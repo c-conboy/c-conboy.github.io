@@ -16,7 +16,7 @@ function App() {
        <TypeWriter onInit = {(typewriter) => {
 
          
-        var passions = [" learning", " developing software", " roleplaying games", "problem solving", " math", " cooking", "technology"];
+        var passions = [" a persistent learner", " an aspiring software developer", " a dungeon master", " a problem solver", " a curious chef",  " a technology enthusiast", " a creative builder"];
 
          typewriter
          .changeDelay(65)
@@ -25,8 +25,8 @@ function App() {
          .pauseFor(500)
          .typeString("I'm a Computer Engineering student at Queen's University")
          .pauseFor(2000)
-         .deleteAll()
-         .typeString("I'm passionate about ").start();
+         .deleteChars(52)
+         .start();
          
          for(var i = 0; i<  passions.length; i++){
           typewriter.typeString(passions[i]).pauseFor(1000).deleteChars(passions[i].length).pauseFor(200);
