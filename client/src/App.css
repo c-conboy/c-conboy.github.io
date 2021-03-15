@@ -97,11 +97,11 @@ font-size: 0.69em;
 }
 
 .emailCont{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   .emailCont{
-    padding-top: 50px;
+    padding-top: 35px;
   }
 }
