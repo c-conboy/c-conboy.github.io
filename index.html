@@ -6,71 +6,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        title {
+            font-weight: bolder;
+            font-family: 'Inter';
+        }
         body {
-            font-family: 'Cutive Mono', monospace;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e9f7;
+            color: #4a4a4a;
+        }
+
+        a {
+            color: #6a5acd;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 5px 0;
+        }
+
+        .intro {
+            margin: 20px 0;
+            justify-content: center;
+            text-align: justify;
+        }
+
+        .portfolio {
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        .portfolio-item {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .portfolio-title {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .line {
+            border: 0;
+            height: 2px;
+            background-color: #4a4a4a;
+            margin: 20px 0; 
         }
 
         img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
-            margin: auto;
-        }
-
-        .w3-padding-64 {
-            padding: 64px;
-        }
-
-        .w3-padding-3 {
-            padding: 3px;
-        }
-
-        .w3-third, .w3-twothird {
-            box-sizing: border-box;
-        }
-
-        @media (max-width: 600px) {
-            .w3-third, .w3-twothird {
-                width: 100%;
-            }
+            display: block;
+            margin: 0 auto;
         }
 
         iframe {
             max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .links {
+                flex-direction: column;
+            }
+
+            .portfolio {
+                text-align: center;
+                font-weight: bolder;
+            }
         }
     </style>
 </head>
-<body class="w3-content" style="max-width:1300px">
+<body>
+    <div class="content">
+        <h1 class="title"><b>Carter Conboy</b></h1>
 
-<div class="w3-row">
-    <div class="w3-third w3-white w3-container w3-center" style="height: auto;">
-        <div class="w3-padding-64">
-            <h1 style="text-align: center; font-family: 'Cutive Mono', monospace;">Carter Conboy</h1>
-            <img src="/c-conboy.github.io/headshot.jpg" class="w3-circle" alt="Person">
+        <!-- Links -->
+        <div class="links">
+            <a href="https://github.com/c-conboy" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/carter-conboy/" target="_blank">LinkedIn</a>
+            <a href="mailto:carterconboy@uvic.ca">Contact</a>
+            <span><a href="c-conboy.github.io/docs/assets/Carter_Conboy_CV.pdf" download>Resume</a></span>
         </div>
-        <div class="w3-padding-3">
-            <a href="https://github.com/c-conboy">Github</a>
-            <a href="https://www.linkedin.com/in/carter-conboy/">Linkedin</a>
-            <a href="mailto:conboy2001@gmail.com">Contact</a>
+        <hr class = "line">
+        <!-- Intro -->
+        <div class="intro">
+            <p>After finishing a degree in <b>Computer Enigneering</b> at <a href="https://www.ece.queensu.ca/undergraduate/computer-engineering/index.html">Queens' University</a> my technical interests in  <b>machine learning</b>, <b>vector modelling</b> and large scale <b>data processing</b> inspired me to dive head first into a <b>Master of Engineering in Applied Data Science</b> at <a href="https://www.uvic.ca/ecs/ece/future/mads/index.php" target="_blank">the University of Victoria</a>.</p>
+            <p>My background in software development includes co-ops as a <b>Cloud Developer</b> with <a href="https://www.queensu.ca/its/" target="_blank">Queen's ITS</a>, and a <b>Security Developer</b> with <a href="https://www.canada.ca/en/department-national-defence.html" target="_blank">the Canadian Department of National Defence</a>.</p>
+            <p>In my personal life I love nature, music and tabletop games. I've also completed CAF basic training, biked the span of two countries, and spent a summer riding in helicopters, planting trees, and adventuring across northern Canada.</p>
         </div>
-    </div>
-
-    <div class="w3-twothird w3-white w3-container" style="height: auto;">
-        <div class="w3-padding-64 w3-center">
-            <div class="w3-left-align w3-padding-small">
-                <p style="margin-top: 10%;">I am a student at <a href="https://www.ece.queensu.ca/undergraduate/computer-engineering/index.html">Queens' University</a> studying Computer Engineering, and am passionate about high-quality software development, cybersecurity, and applying the theoretical foundations of deep learning. My capstone project focuses on applying CNNs to passive acoustic monitoring signals in order to classify and protect marine mammals.</p>
-                <p>Currently, I work at <a href="https://www.queensu.ca/its/">Queens' ITS</a>, where I am involved in developing identity managment software. Previously, I was a junior software developer at <a href="https://www.canada.ca/en/department-national-defence.html">the Canadian Department of National Defense</a> in Ottawa, where I developed multiple cybersecurity tools.</p>
-                <p>I've also completed CAF basic training, biked across two countries, and spent a summer riding in helicopters, planting trees, and adventuring across northern Canada.</p>
+        <hr class = "line">
+        <!-- Portfolio -->
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <h3 class="portfolio-title"><b>Passive Acoustic Monitoring of Marine Mammals</b></h1>
+                <p>By leveraging <b>CNN's</b> for audio signal proccessing my Capstone group built a solution for <b>multiclass classifiction</b> of marine mammals. The project used data from the <a href="https://whoicf2.whoi.edu/science/B/whalesounds/index.cfm">Watkins Marine Mammal Sound Database</a> and Resnet18 model architecture.</p>
+                <img class="img" src="/c-conboy.github.io/docs/assets/images/Capstone_Pipeline.PNG" alt="Pipeline">
+                <p>By using MFCC's for <b>feature extraction</b> we achieved solid performance comparable to other species classification models</p>
+                <img class="img" src="/c-conboy.github.io/docs/assets/images/Capstone_Results.PNG" alt="results">
+                <p>The main acheivements were feature engineering with <b>signal processing methods</b> verified by accuracy comparisons, reducing the effect of <b>class imbalances</b> with custom loss functions and increasing training efficiency with <b>GPU proccessing</b>.</p>
+            </div>
+            <hr class = "line">
+            <div class="portfolio-item">
+                <h3 class="portfolio-title"><b>Hyperparameter Optimization for Cancer Cell Classification</b></h1>
+                <p>This project provides a <b>binary classification</b> solution to Cancer Cell Classification using basic <b>logistic regression</b> and <b>softmax regularization</b>, investigating <b>optimal hyperparameter's</b> for a balance between generalization and learning.</p>
+                <p>The project uses this <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">dataset</a> from the University of Wisconsin and basic gradient descent for Optimization</p>
+                <img class="img" src="/c-conboy.github.io/docs/assets/images/Cancer_Accuracy.PNG" alt="results">
+                <p>The above figure demonstrates the relationship between the softmax regulartion term and training efficiency through a reduction of the objective function's <b>condition number</b>, as well as the relationship with model accuracy through <b>reduced overfitting</b></p>
+                <p>Next steps include systematized Hyperparameter grid search with cross validation.</p>
             </div>
         </div>
-
-        <div class="w3-container w3-padding-16 w3-center">
-            <div class="w3-responsive">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GwcIAlQUMaA?si=-y3p4tgaMOsjDxJK" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <hr class = "line">
+        <!-- Video -->
+        <div>
+            <h3 class="portfolio-title"><b>Older Projects</b></h3>
+            <iframe 
+                src="https://www.youtube.com/embed/GwcIAlQUMaA?si=-y3p4tgaMOsjDxJK" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
+        <hr class = "line">
     </div>
-</div>
-
 </body>
 </html>
