@@ -17,12 +17,12 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f3e9f7;
-            color: #4a4a4a;
+            background-color: #ffffff;
+            color: #000000;
         }
 
         a {
-            color: #6a5acd;
+            color: #0000EE;
             text-decoration: none;
             font-weight: 600;
         }
@@ -68,7 +68,7 @@
         .line {
             border: 0;
             height: 2px;
-            background-color: #4a4a4a;
+            background-color: #000000;
             margin: 20px 0; 
         }
 
@@ -107,35 +107,35 @@
             <a href="mailto:carterconboy@uvic.ca">Contact</a>
             <a href="https://www.carterconboy.dev/docs/assets/Carter_Conboy_CV.pdf" target="_blank">Resume</a>
         </div>
-        <hr class = "line">
+        <hr class="line">
         <!-- Intro -->
         <div class="intro">
-            <p>After finishing a degree in <b>Computer Engineering</b> at <a href="https://www.ece.queensu.ca/undergraduate/computer-engineering/index.html">Queens' University</a> my technical interests in  <b>machine learning</b>, <b>vector modelling</b> and large scale <b>data processing</b> inspired me to dive head first into a <b>Master of Engineering in Applied Data Science</b> at <a href="https://www.uvic.ca/ecs/ece/future/mads/index.php" target="_blank">the University of Victoria</a>.</p>
-            <p>My background in software development includes internships as a <b>Cloud Developer</b> with <a href="https://www.queensu.ca/its/" target="_blank">Queen's ITS</a>, and a <b>Security Developer</b> with <a href="https://www.canada.ca/en/department-national-defence.html" target="_blank">the Canadian Department of National Defence</a>.</p>
-            <p>In my personal life I love nature, music and tabletop games. I've also completed CAF basic training, biked the span of two countries, and spent a summer riding in helicopters, planting trees, and adventuring across northern Canada.</p>
+            <p>After finishing a degree in <b>Computer Engineering</b> at <a href="https://www.ece.queensu.ca/undergraduate/computer-engineering/index.html">Queen's University</a>, my technical interests in <b>machine learning</b>, <b>vector modeling</b>, and large-scale <b>data processing</b> inspired me to pursue a <b>Master of Engineering in Applied Data Science</b> at <a href="https://www.uvic.ca/ecs/ece/future/mads/index.php" target="_blank">the University of Victoria</a>.</p>
+            <p>My background in software development includes internships as a <b>Cloud Developer</b> with <a href="https://www.queensu.ca/its/" target="_blank">Queen's ITS</a> and a <b>Security Developer</b> with <a href="https://www.canada.ca/en/department-national-defence.html" target="_blank">the Canadian Department of National Defence</a>.</p>
+            <p>In my personal life, I love nature, music, and tabletop games. I've also completed CAF basic training, biked the span of two countries, and spent a summer riding in helicopters, planting trees, and adventuring across northern Canada.</p>
         </div>
-        <hr class = "line">
+        <hr class="line">
         <!-- Portfolio -->
         <div class="portfolio">
             <div class="portfolio-item">
-                <h3 class="portfolio-title"><b>Passive Acoustic Monitoring of Marine Mammals</b></h1>
-                <p>By leveraging <b>CNN's</b> for audio signal proccessing my Capstone group built a solution for <b>multiclass classifiction</b> of marine mammals. The project used data from the <a href="https://whoicf2.whoi.edu/science/B/whalesounds/index.cfm">Watkins Marine Mammal Sound Database</a> and ResNet-18 model architecture.</p>
+                <h3 class="portfolio-title"><b>Passive Acoustic Monitoring of Marine Mammals</b></h3>
+                <p>By leveraging <b>CNNs</b> for audio signal processing, my Capstone group built a solution for <b>multiclass classification</b> of marine mammals. The project used data from the <a href="https://whoicf2.whoi.edu/science/B/whalesounds/index.cfm">Watkins Marine Mammal Sound Database</a> and ResNet-18 model architecture.</p>
                 <img class="img" src="/c-conboy.github.io/docs/assets/images/Capstone_Pipeline.PNG" alt="Pipeline">
-                <p>By using MFCC's for <b>feature extraction</b> we achieved good performance (93% Accuracy) which is comparable to other species classification models</p>
+                <p>By using MFCCs for <b>feature extraction</b>, we achieved good performance (93% accuracy), comparable to other species classification models.</p>
                 <img class="img" src="/c-conboy.github.io/docs/assets/images/Capstone_results.PNG" alt="results">
-                <p>The main acheivements were feature engineering with <b>signal processing methods</b> verified by accuracy comparisons, reducing the effect of <b>class imbalances</b> with custom loss functions and increasing training efficiency with <b>GPU processing</b>.</p>
+                <p>The main achievements were feature engineering with <b>signal processing methods</b>, reducing the effect of <b>class imbalances</b> with custom loss functions, and increasing training efficiency with <b>GPU processing</b>.</p>
             </div>
-            <hr class = "line">
+            <hr class="line">
             <div class="portfolio-item">
-                <h3 class="portfolio-title"><b>Hyperparameter Optimization for Cancer Cell Classification</b></h1>
-                <p>This project provides a <b>binary classification</b> solution to Cancer Cell Classification using basic <b>logistic regression</b> and <b>softmax regularization</b>, investigating <b>optimal hyperparameters</b> for a balance between generalization and learning.</p>
-                <p>The project uses this <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">dataset</a> from the University of Wisconsin and basic gradient descent for Optimization</p>
+                <h3 class="portfolio-title"><b>Hyperparameter Optimization for Cancer Cell Classification</b></h3>
+                <p>This project provides a <b>binary classification</b> solution to cancer cell classification using basic <b>logistic regression</b> and <b>softmax regularization</b>, investigating <b>optimal hyperparameters</b> for a balance between generalization and learning.</p>
+                <p>The project uses this <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">dataset</a> from the University of Wisconsin and basic gradient descent for optimization.</p>
                 <img class="img" src="/c-conboy.github.io/docs/assets/images/Cancer_Accuracy.PNG" alt="results">
-                <p>The above figure demonstrates the relationship between the softmax regularization term and training efficiency through a reduction of the objective function's <b>condition number</b>, as well as the relationship with model accuracy through <b>reduced overfitting</b></p>
-                <p>Next steps include systematized Hyperparameter grid search with cross validation.</p>
+                <p>The figure above demonstrates the relationship between the softmax regularization term and training efficiency through a reduction of the objective function's <b>condition number</b>, as well as the relationship with model accuracy through <b>reduced overfitting</b>.</p>
+                <p>Next steps include systematic hyperparameter grid search with cross-validation.</p>
             </div>
         </div>
-        <hr class = "line">
+        <hr class="line">
         <!-- Video -->
         <div>
             <h3 class="portfolio-title"><b>Older Projects</b></h3>
@@ -145,7 +145,7 @@
                 allowfullscreen>
             </iframe>
         </div>
-        <hr class = "line">
+        <hr class="line">
     </div>
 </body>
 </html>
