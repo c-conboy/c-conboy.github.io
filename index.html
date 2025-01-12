@@ -118,16 +118,24 @@
         <!-- Portfolio -->
         <div class="portfolio">
             <div class="portfolio-item">
+                <h3 class="portfolio-title"><b>BioQ: Modern Reimplementation of DanQ Hybrid Neural Network</b></h3>
+                <p>In collaboration with my colleague Yeshwanth Konka, I implemented and tested the <b>Hybrid Neural Network</b> described in the <a href="https://academic.oup.com/nar/article/44/11/e107/2468300" target="_blank">DanQ</a> paper using modern frameworks and computing platforms in order to predict <b>non-coding DNA function</b>. The model architecture consisting of a <b>convolutional neural network</b> feeding into a <b>bidirectional recurrent neural network</b> is shown in the figure below.</p>
+                <img class="img" src="/c-conboy.github.io/docs/assets/images/BioQ/bioq.png" alt="results">
+                <p>The project was developed in Python and used <b>Pytorch</b> and <b>CUDA</b>. Compared to the original model, our implementation achieved comparable performance with additional ease-of-use features</p>
+                <p>Please check out the <a href="https://www.carterconboy.dev/docs/assets/BioQ.pdf" target="_blank">paper</a> for more details!</p>
+            </div>
+            <hr class="line">
+            <div class="portfolio-item">
                 <h3 class="portfolio-title"><b>Magic the Gathering Card Color Classification</b></h3>
                 <p>As a final project for my <b>Optimization for Machine Learning</b>
                 course, I developed a solution for the classification of Magic the Gathering (MTG) card color based on rules text by leveraging <b>softmax logistic regression</b> and doc2vec <b>text embedding</b>.
                 </p>
                 <p>Magic The Gathering (MTG) is a popular trading card game which contains over 26,000 unique cards. Players select subsets of these cards to build decks which they use to play against each other. Each card is labeled as belonging to 1 of 5 colors: Blue, Black, Red, White or Green, and has rules text defining its game function.
                 </p>
-                <img class="img" src="/c-conboy.github.io/docs/assets/images/Cards/card_example.png" alt="card example">
                 <p>The game’s design philosophy attempts to maintain a ”color pie” where each color of card owns a unique style and set of game mechanics, enabling the classification of a card’s color through its rules text. The project showcases a solution to this classification problem, demonstrating <b>data acquisition and processing</b>, as well ML <b>model selection, training and assessment.</b></p>
                 <p>Please check out the <a href="https://www.carterconboy.dev/docs/assets/MTG_Card_Classification.pdf" target="_blank">paper</a> for more details!</p>
             </div>
+            <hr class="line">
             <div class="portfolio-item">
                 <h3 class="portfolio-title"><b>Passive Acoustic Monitoring of Marine Mammals</b></h3>
                 <p>By leveraging <b>CNNs</b> for audio signal processing, my Capstone group built a solution for <b>multiclass classification</b> of marine mammals. The project used data from the <a href="https://whoicf2.whoi.edu/science/B/whalesounds/index.cfm">Watkins Marine Mammal Sound Database</a> and ResNet-18 model architecture.</p>
